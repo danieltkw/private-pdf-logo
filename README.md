@@ -29,7 +29,7 @@ On Windows, this assumes Arial at:
 C:\Windows\Fonts\arial.ttf
 ```
 
-Change `ARIAL_TTF_PATH` in `code.py` if needed. [web:89][web:90]
+Change `ARIAL_TTF_PATH` in `code.py` if needed. 
 
 ---
 
@@ -90,6 +90,6 @@ The script prints input and output paths.
 ## Security notes
 
 - Watermark is just visual.
-- Password mode = normal PDF password protection via `pypdf`. [web:74]
-- Weak mode uses permissions flags; many tools ignore or strip them. [web:112][web:118][web:122]
+- Password mode = normal PDF password protection via `pypdf`. 
+- Weak mode uses permissions flags; many tools ignore or strip them.
 - This does not stop screenshots or photos of the screen.
