@@ -56,7 +56,7 @@ ENCRYPTION_ALGORITHM: str = "AES-256"
 # - ENABLE_PASSWORD_PROTECTION uses a password and is stronger.
 # - ENABLE_WEAK_PERMISSIONS_ONLY only sets PDF permission bits; many viewers
 #   and tools can ignore or overwrite these. Use only as convenience, NOT real
-#   security. [web:14][web:22][web:126]
+#   security. 
 
 
 def find_input_pdf(script_dir: Path, explicit_name: str | None = None) -> Path:
@@ -173,7 +173,7 @@ def protect_pdf(input_pdf: Path, password: str, watermark_text: str) -> Path:
     elif ENABLE_WEAK_PERMISSIONS_ONLY:
         # Weak: set permissions but do not require password.
         # According to examples, you can use permissions_flag bitmask;
-        # 0 means "no permissions" in this context. [web:14][web:72][web:127][web:123]
+        # 0 means "no permissions" in this context. 
         writer.encrypt(
             user_password="",
             owner_password="owner-only",
